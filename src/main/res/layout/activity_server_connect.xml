@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94F1EE"
+    tools:context=".ServerConnect">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:orientation="vertical"
+            android:padding="20px">
+
+            <EditText
+                android:id="@+id/sip"
+                android:layout_width="wrap_content"
+                android:layout_height="20pt"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/text_input"
+                android:ems="15"
+                android:gravity="center"
+                android:hint="Enter Server IP"
+                android:inputType="text"
+                android:text="192.168.1.19"
+                android:textColor="@color/purple_700"
+                android:textColorHint="@color/purple_700" />
+
+            <Button
+                android:id="@+id/con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Connect" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80px"
+            android:src="@drawable/connect"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect to Server"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"
+            android:textSize="15pt"/>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

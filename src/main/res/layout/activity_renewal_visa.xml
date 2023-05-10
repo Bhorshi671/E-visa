@@ -1,0 +1,151 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgg3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        tools:context=".MainActivity" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Renewal Visa Form"
+                android:fontFamily="@font/alegreya_sc"
+                android:textColor="@color/black"
+                android:textSize="35dp" />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Name" />
+
+            <EditText
+                android:id="@+id/idno"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Contact" />
+            <TextView
+                android:layout_marginTop="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Country"
+                android:textColor="@color/black"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spd"/>
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="Visa number" />
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="date"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Date of Birth" />
+
+            <EditText
+                android:id="@+id/con"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="phone"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="ID  Number" />
+
+            <TextView
+                android:id="@+id/pid2"
+                android:layout_width="267dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="Form Fess 500"
+                android:textColor="@color/purple_700"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/cardnumber"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="phone"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Ender Card number" />
+            <EditText
+                android:id="@+id/cvv"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="phone"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Ender cvv" />
+
+
+            <Button
+                android:id="@+id/btnSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Id image" />
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="300dp"
+                android:layout_height="188dp"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/reg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/cpass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/button"
+                android:shadowRadius="5"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="@android:color/black"
+                app:backgroundTint="#00FFFFFF"
+                app:backgroundTintMode="add"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

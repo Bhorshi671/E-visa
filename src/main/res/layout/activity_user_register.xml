@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15px">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="User Registration"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14pt"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="19dp"
+                tools:layout_editor_absoluteY="49dp" />
+
+
+            <EditText
+                android:id="@+id/pname"
+                android:layout_width="match_parent"
+                android:layout_height="25pt"
+                android:layout_marginTop="10px"
+                android:background="@drawable/text_input"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textColor="#FDF8F8"
+                android:textColorHint="@color/black"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="118dp" />
+
+
+            <EditText
+                android:id="@+id/eemail"
+                android:layout_width="match_parent"
+                android:layout_height="25pt"
+                android:layout_marginTop="10px"
+                android:background="@drawable/text_input"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="User Name"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                tools:layout_editor_absoluteX="103dp"
+
+                tools:layout_editor_absoluteY="267dp" />
+
+            <EditText
+                android:id="@+id/eemail1"
+                android:layout_width="match_parent"
+                android:layout_height="25pt"
+                android:layout_marginTop="10px"
+                android:background="@drawable/text_input"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Address"
+
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                tools:layout_editor_absoluteX="103dp"
+                tools:layout_editor_absoluteY="267dp" />
+
+            <EditText
+                android:id="@+id/pcontact"
+                android:layout_width="match_parent"
+                android:layout_height="25pt"
+                android:layout_marginTop="10px"
+                android:background="@drawable/text_input"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Mobile Number"
+                android:inputType="phone"
+
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="326dp" />
+
+            <RadioGroup
+                android:id="@+id/prrg"
+                android:layout_width="match_parent"
+                android:layout_height="25pt"
+                android:layout_marginTop="10px"
+                android:orientation="horizontal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="@color/black" />
+
+
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/edob"
+                android:layout_width="match_parent"
+                android:layout_height="25pt"
+                android:layout_marginTop="10px"
+                android:background="@drawable/text_input"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Select date"
+                android:inputType="date"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                tools:layout_editor_absoluteX="105dp"
+
+                tools:layout_editor_absoluteY="214dp" />
+
+
+            <EditText
+                android:id="@+id/epassword"
+                android:layout_width="match_parent"
+                android:layout_height="25pt"
+                android:layout_marginTop="10px"
+                android:background="@drawable/text_input"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+
+                android:textColor="@color/white"
+                android:textColorHint="@color/black" />
+
+            <Button
+                android:id="@+id/preg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:text="Register"
+                android:textColor="#F6F4F4"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="192dp"
+                android:layout_height="53dp"
+                android:layout_gravity="center"
+                android:text="User Login Here"
+                android:textAlignment="center"
+                android:textColor="#1562E8"
+                android:textSize="8pt"
+                tools:layout_editor_absoluteX="19dp"
+                tools:layout_editor_absoluteY="49dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
